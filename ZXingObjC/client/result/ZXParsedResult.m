@@ -27,7 +27,8 @@
 }
 
 + (id)parsedResultWithType:(ZXParsedResultType)type {
-  return [[self alloc] initWithType:type];
+  ZXParsedResult *res = [self alloc];
+  return [res initWithType:type];
 }
 
 - (NSString *)displayResult {
